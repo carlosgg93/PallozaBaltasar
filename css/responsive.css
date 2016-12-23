@@ -183,6 +183,11 @@
   .blog .blog-item .entry-meta > span a{
     font-size: 10px;
   }
+
+  #conatcat-info {
+    background: #fff;
+    padding: 30px 0;
+  }
 }
 
 /* xs */
@@ -291,6 +296,11 @@
   .post_reply_comments {
     padding-left: 20px;
   }
+
+  #conatcat-info {
+    background: #fff;
+    padding: 30px 0;
+  }
     
 
 }
@@ -298,6 +308,9 @@
 /* XS Portrait */
 @media (max-width: 480px) {
 
-
+  #conatcat-info {
+    background: #fff;
+    padding: 30px 0;
+  }
 }
 
