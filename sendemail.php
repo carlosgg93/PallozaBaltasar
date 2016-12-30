@@ -1,21 +1,27 @@
 <?php
 	header('Content-type: application/json');
-	$status = array(
-		'type'=>'success',
-		'message'=>'Thank you for contact us. As early as possible  we will contact you '
-	);
 
-    $name = @trim(stripslashes($_POST['name'])); 
-    $email = @trim(stripslashes($_POST['email'])); 
-    $subject = @trim(stripslashes($_POST['subject'])); 
-    $message = @trim(stripslashes($_POST['message'])); 
+
+    $name = @trim(stripslashes($_POST['nombrePersona']));
+    $surname = @trim(stripslashes($_POST['apellidoPersona']));
+    $email = @trim(stripslashes($_POST['emailPersona']));
+    $phone = @trim(stripslashes($_POST['telefonoPersona']));
+    $subject = @trim(stripslashes($_POST['asuntoCorreo']));
+    $message = @trim(stripslashes($_POST['mensajeCorreo']));
+
+
 
     $email_from = $email;
     $email_to = 'info@pallozabaltasar.com';//replace with your email
 
-    $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Subject: ' . $subject . "\n\n" . 'Message: ' . $message;
+    $body = 'Nombre: ' . $name ." ".$surname."\n\n" . 'Correo: ' . $email."\n\n" . 'Teléfono: ' . $phone . "\n\n" . 'Asunto: ' . $subject . "\n\n" . 'Mensaje: ' . $message;
 
-    $success = @mail($email_to, $subject, $body, 'From: <'.$email_from.'>');
+    $success = @mail($email_to, $subject, $body, 'De: <'.$email_from.'>');
+
+$status = array(
+    'type'=>'success',
+    'message'=>'Gracias por ponerte en contacto con nosotros.Nos pondremos en contacto contigo lo mas pronto posible! '
+);
 
     echo json_encode($status);
     die;

@@ -46,9 +46,10 @@ jQuery(function($) {'use strict',
 		var form_status = $('<div class="form_status"></div>');
 		$.ajax({
 			url: $(this).attr('action'),
-
+			data:"nombrePersona="+$("input[name='nombrePersona']").val()+"&apellidoPersona="+$("input[name='apellidoPersona']").val()+"&telefonoPersona="+$("input[name='telefonoPersona']").val()+"&emailPersona="+$("input[name='emailPersona']").val()+"&asuntoCorreo="+$("input[name='asuntoCorreo']").val()+"&mensajeCorreo="+$("textarea[name='mensajeCorreo']").val(),
+			type: "POST",
 			beforeSend: function(){
-				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
+				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Enviando el correo...</p>').fadeIn() );
 			}
 		}).done(function(data){
 			form_status.html('<p class="text-success">' + data.message + '</p>').delay(3000).fadeOut();
