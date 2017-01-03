@@ -7,6 +7,18 @@ jQuery(function($) {'use strict',
 		});
 	});
 
+	$('.go-top').click(function(){
+		$('body,html').animate({scrollTop : 0}, 500);
+		return false;
+	});
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 0) {
+			$('.go-top').fadeIn();
+		} else {
+			$('.go-top').fadeOut();
+		}
+	});
+
 
 	// accordian
 	$('.accordion-toggle').on('click', function(){
