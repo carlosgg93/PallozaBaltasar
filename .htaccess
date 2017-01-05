@@ -1,2 +1,6 @@
 
-ErrorDocument 404 404.html
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+rewritecond %{http_host} ^pallozabaltasar.com [nc]
+rewriterule ^(.*)$ http://www.pallozabaltasar.com/$1 [r=301,nc]
