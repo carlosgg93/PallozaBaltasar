@@ -7,6 +7,7 @@ jQuery(function($) {'use strict',
 		});
 	});
 
+
 	$('.go-top').click(function(){
 		$('body,html').animate({scrollTop : 0}, 500);
 		return false;
@@ -17,6 +18,11 @@ jQuery(function($) {'use strict',
 		} else {
 			$('.go-top').fadeOut();
 		}
+	});
+
+
+	$('#localizacion').click(function(){
+		location.href='como-llegar.html'
 	});
 
 
@@ -80,5 +86,5 @@ jQuery(function($) {'use strict',
 	//Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
-	});	
+	});
 });

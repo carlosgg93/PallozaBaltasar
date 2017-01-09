@@ -312,11 +312,28 @@
     background: #fff;
     padding: 30px 0;
   }
+
+  .navbar-brand {
+    padding: 0;
+    margin:0;
+    width: 240px;
+  }
+  #header{
+    position:fixed;
+    width:100%;
+    z-index:100;
+    top:0;
+    left:0;
+  }
+  body{
+    padding-top: 142px;
+  }
 }
 @media (min-width: 1200px){
   .map {
     min-height: 550px;
   }
 }
+
 
 
