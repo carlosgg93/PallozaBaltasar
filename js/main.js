@@ -9,6 +9,7 @@ jQuery(function($) {'use strict',
 
 
 	$('.go-top').click(function(){
+		console.log("eeoo");
 		$('body,html').animate({scrollTop : 0}, 500);
 		return false;
 	});

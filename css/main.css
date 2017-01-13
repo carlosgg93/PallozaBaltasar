@@ -311,7 +311,7 @@ input.search-form:hover {
 }
 
 .navbar-inverse .navbar-nav .dropdown-menu {
-  background-color: rgba(0,0,0,.85);
+  background-color: rgba(36,36,36,.90);
   -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -596,6 +596,7 @@ input.search-form:hover {
 
 .recent-work-wrap img{
   width: 100%;
+  height: 214.5px;
 }
 
 .recent-work-wrap .recent-work-inner{
@@ -1698,7 +1699,7 @@ ul.social_icons li  a i{
 }
 
 .portfolio-filter > li a {
-  background: none repeat scroll 0 0 #FFFFFF;
+  background: none repeat scroll 0 0 #2e2e2e;
   font-size: 14px;
   font-weight: 400;
   margin-right: 20px;

@@ -14,7 +14,7 @@
     $email_from = $email;
     $email_to = 'info@pallozabaltasar.com';//replace with your email
 
-    $body = 'Nombre: ' . $name ." ".$surname."\n\n" . 'Correo: ' . $email."\n\n" . 'Teléfono: ' . $phone . "\n\n" . 'Asunto: ' . $subject . "\n\n" . 'Mensaje: ' . $message;
+    $body = 'Nombre: ' . $name ." ".$surname."\n\n" . 'Correo: ' . $email."\n\n" . 'Telefono: ' . $phone . "\n\n" . 'Asunto: ' . $subject . "\n\n" . 'Mensaje: ' . $message;
 
     $success = @mail($email_to, $subject, $body, 'De: <'.$email_from.'>');
 

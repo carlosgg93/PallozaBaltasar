@@ -12,7 +12,12 @@
     margin-right: -10px;
   }
 
-  
+  .map {
+    min-height: 550px;
+  }
+  .img404{
+    padding-left:180px;
+  }
 
 }
 
@@ -24,6 +29,10 @@
       display: block;
       -webkit-animation: fadeInUp 400ms;
       animation: fadeInUp 400ms;
+  }
+
+  .dropdown-menu{
+    width: 230px !important;
   }
 
   .navbar-nav > li {
@@ -95,6 +104,12 @@
     margin-right: 0;
   }
 
+  .map {
+    min-height: 450px;
+  }
+  .img404{
+    padding-left:100px;
+  }
 }
 
 
@@ -147,6 +162,13 @@
     font-size: 20px;
   }
 
+  .navbar-brand {
+    padding-right: 10px;
+    padding-top: 13px;
+    margin: 0;
+    width: 181px;
+  }
+
   .sinlge-skill{
     width: 150px;
     height: 150px;
@@ -188,6 +210,10 @@
     background: #fff;
     padding: 30px 0;
   }
+
+  .dropdown-menu{
+    width: 230px !important;
+  }
 }
 
 /* xs */
@@ -196,6 +222,9 @@
     margin-left: 0;
   }
 
+  .dropdown-menu{
+    width: 230px !important;
+  }
   .top-number{
     font-size: 14px;
   }
@@ -316,7 +345,7 @@
   .navbar-brand {
     padding: 0;
     margin:0;
-    width: 240px;
+    width: 230px;
   }
   #header{
     position:fixed;
@@ -326,14 +355,29 @@
     left:0;
   }
   body{
-    padding-top: 142px;
+    padding-top: 110px;
+  }
+
+  .dropdown-menu{
+    width: 230px !important;
   }
 }
-@media (min-width: 1200px){
-  .map {
-    min-height: 550px;
-  }
-}
 
-
-
+/* super XS Portrait */
+/*@media (max-width: 320px) {*/
+  /*.navbar-brand {*/
+    /*padding-top:5px;*/
+    /*margin:0;*/
+    /*width: 200px;*/
+  /*}*/
+  /*#header{*/
+    /*position:fixed;*/
+    /*width:100%;*/
+    /*z-index:100;*/
+    /*top:0;*/
+    /*left:0;*/
+  /*}*/
+  /*body{*/
+    /*padding-top: 110px;*/
+  /*}*/
+/*}*/
