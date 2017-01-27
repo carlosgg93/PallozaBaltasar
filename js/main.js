@@ -9,7 +9,6 @@ jQuery(function($) {'use strict',
 
 
 	$('.go-top').click(function(){
-		console.log("eeoo");
 		$('body,html').animate({scrollTop : 0}, 500);
 		return false;
 	});
@@ -21,6 +20,9 @@ jQuery(function($) {'use strict',
 		}
 	});
 
+	// $('.dropdown-toggle').click(function(){
+	// 	location.href='fotos-palloza.html'
+	// });
 
 	$('#localizacion').click(function(){
 		location.href='como-llegar.html'
